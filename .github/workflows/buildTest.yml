@@ -26,6 +26,6 @@ jobs:
         if: ${{ success() }}
         run: |
           echo "Creating issue, manual approval required"
-          gh issue create --title "Hello World" --body "Hello World test"
+          gh issue create --title "PR Passed Tests, Need Approval" --body "approve then deploy"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
